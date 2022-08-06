@@ -39,9 +39,27 @@ h1 {
   left: 0;
 }
 
+.search {
+  text-align: center;
+  padding: 1em;
+}
+
+.app input {
+  padding: 0.7em 1.5em;
+  font-size: 1.2em;
+  border-radius: 25px;
+  border: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
 .container {
   max-width: 700px;
-  height: 700px;
+  height: 400px;
   margin: auto;
   padding: 0 1em;
   position: relative;
