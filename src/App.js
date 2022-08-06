@@ -10,10 +10,14 @@ function App() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=22519734f5421c8f55450aaa03737461`
 
   const searchLocation = (event) => {
+    const city = event.target.value
+
     if (event.key === 'Enter') {
       axios.get(url).then((response) => {
         setData(response.data)
         console.log(response.data)
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + city + "')"
+        setLocation('')
       })
     }
   }
@@ -48,16 +52,12 @@ function App() {
           <div className='bottom'>
             <div className='feels'>
               {/* data.main ? => checking first if data.main is returned */}
-              {data.main ? (
-                <p className='bold'>{data.main.feels_like.toFixed()}°c</p>
-              ) : null}
+              {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°c</p> : null}
               <p>Feels like</p>
             </div>
             <div className='humidity'>
               {/* data.main ? => checking first if data.main is returned */}
-              {data.main ? (
-                <p className='bold'>{data.main.humidity.toFixed()}°c</p>
-              ) : null}
+              {data.main ? <p className='bold'>{data.main.humidity.toFixed()}°c</p> : null}
               <p>Humidity</p>
             </div>
             <div className='wind'>
