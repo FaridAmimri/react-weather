@@ -94,3 +94,8 @@ h1 {
 .bold {
   font-weight: 700;
 }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+}
