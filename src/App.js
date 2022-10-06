@@ -20,7 +20,7 @@ function App() {
         setIsLoading(false)
       })
       .catch((error) => console.log(error))
-  }, [])
+  }, [url])
 
   const searchLocation = (event) => {
     const city = event.target.value
