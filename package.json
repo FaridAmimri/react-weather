@@ -1,6 +1,6 @@
 {
-  "name": "myreactweatherapp",
-  "homepage": "http://faridamimri.github.io/myReactWeatherApp",
+  "name": "react-weather-app",
+  "homepage": "http://faridamimri.github.io/react-weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
